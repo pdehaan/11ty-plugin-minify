@@ -28,13 +28,13 @@ If you DON'T have `NODE_ENV` or `ELEVENTY_ENV` environment variables set to "pro
 If you want to only minify/prettify HTML output files, you can use the following `require()` statement:
 
 ```js
-const minify = require("11ty-plugin-minify/html");
+const minify = require("eleventy-plugin-minify/html");
 ```
 
 Similarly, if you only want to minify/prettify JavaScript[1] output files, you can use the following `require()` statement:
 
 ```js
-const minify = require("11ty-plugin-minify/js");
+const minify = require("eleventy-plugin-minify/js");
 ```
 
 ## NOTES
