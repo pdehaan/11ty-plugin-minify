@@ -1,23 +1,32 @@
 {
-  "name": "11ty-plugin-minify",
+  "name": "eleventy-plugin-minify",
+  "description": "Using 11ty transforms to minify/prettify output.",
   "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "eleventy",
-    "eleventy-plugin",
-    "11ty",
-    "minify",
-    "prettier"
-  ],
   "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
-  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-plugin-minify/issues"
+  },
   "dependencies": {
     "html-minifier": "^4.0.0",
     "prettier": "^2.2.1",
     "uglify-js": "^3.12.5"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/11ty-plugin-minify#readme",
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "eleventy-plugin",
+    "minify",
+    "prettier"
+  ],
+  "license": "MPL-2.0",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-plugin-minify.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
