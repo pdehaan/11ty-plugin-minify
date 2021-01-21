@@ -12,7 +12,7 @@ npm i github:pdehaan/eleventy-plugin-minify -D
 After installing the module, merge the following snippets to your .eleventy.js config file.
 
 ```js
-const minify = require("11ty-plugin-minify");
+const minify = require("eleventy-plugin-minify");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(minify);
