@@ -1,11 +1,11 @@
-const path = require("path");
+const lib = require("../lib");
 
 const minify = require("html-minifier").minify;
 const prettier = require("prettier");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addTransform("htmlmin", async function(content="", outputPath="") {
-    const extname = path.extname(outputPath).toLowerCase();
+    const extname = lib.extname(outputPath);
     switch (extname) {
       case ".html":
         if (process.env.NODE_ENV === "production") {
