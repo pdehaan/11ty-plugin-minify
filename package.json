@@ -1,0 +1,16 @@
+{
+  "name": "11ty-plugin-minify",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["eleventy", "eleventy-plugin", "11ty", "minify", "prettier"],
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "prettier": "^2.2.1"
+  }
+}
