@@ -8,9 +8,9 @@ module.exports = (eleventyConfig) => {
     const extname = lib.extname(outputPath);
     switch (extname) {
       case ".js":
-        if (process.env.NODE_ENV === "production") {
+        if (lib.isProduction) {
           // Return minified content.
-          const opts = {
+          const minifyOpts = {
             warnings: true,
             output: {
               beautify: false
@@ -18,9 +18,10 @@ module.exports = (eleventyConfig) => {
           };
           const result = minify({
             [outputPath]: content
-          }, opts);
+          }, minifyOpts);
+
           if (result.warnings) {
-            console.log(result.warnings.join("\n"));
+            console.warn(result.warnings.join("\n"));
           }
 
           if (result.error) {

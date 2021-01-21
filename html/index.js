@@ -8,12 +8,13 @@ module.exports = (eleventyConfig) => {
     const extname = lib.extname(outputPath);
     switch (extname) {
       case ".html":
-        if (process.env.NODE_ENV === "production") {
+        if (lib.isProduction) {
           // Return minified content.
-          return minify(content, {
+          const minifyOpts = {
             removeComments: true,
             collapseWhitespace: true,
-          });
+          };
+          return minify(content, minifyOpts);
         }
         // Return prettified (unminified) content.
         return prettier.format(content, { parser: "html" });
